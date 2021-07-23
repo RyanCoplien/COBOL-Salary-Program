@@ -105,7 +105,8 @@
                WHEN JobNumber(I) = JobCodeIn
                SET J TO I
                MOVE JobName(J) TO JobClassNameOut
-           END-SEARCH       STOP run.
+           END-SEARCH
+       STOP run.
 
        FillTable.
            MOVE 010203040506070809 TO JobNumber.
